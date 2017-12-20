@@ -7,9 +7,9 @@ X= data[:,][:,0]
 y= data[:,][:,1]
 
 m= (mean(X)*mean(y)-mean(X*y))/(mean(X)**2-mean(X**2))
-b= mean(y)-m*mean(X)
+c= mean(y)-m*mean(X)
 
-y2= [m*x+b for x in X]
+y2= [m*x+c for x in X]
 
 plt.scatter(X,y,marker='x',color='r',label='Training Data')
 plt.plot(X,y2,color='b',label='LinearRegression')
