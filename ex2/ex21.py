@@ -22,7 +22,7 @@ for i in range(0,len(y)):
 plt.xlabel('Exam 1 Score')
 plt.ylabel('Exam 2 Score')
 plt.title('ScatterData')
-##plt.show()
+plt.show()
 
 def sigmoid(z):
     return 1.0/(1.0+math.e**(-1*z))
