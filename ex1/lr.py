@@ -1,4 +1,3 @@
-from statistics import mean
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -6,8 +5,8 @@ data = np.genfromtxt('ex1.txt', delimiter=',')
 X= data[:,][:,0]
 y= data[:,][:,1]
 
-m= (mean(X)*mean(y)-mean(X*y))/(mean(X)**2-mean(X**2))
-c= mean(y)-m*mean(X)
+m= (np.mean(X)*np.mean(y)-np.mean(X*y))/(np.mean(X)**2-np.mean(X**2))
+c= np.mean(y)-m*np.mean(X)
 
 y2= [m*x+c for x in X]
 
